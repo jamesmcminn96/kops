@@ -293,6 +293,8 @@ type KubeDNSConfig struct {
 	Replicas int    `json:"replicas,omitempty"`
 	Domain   string `json:"domain,omitempty"`
 	ServerIP string `json:"serverIP,omitempty"`
+	// DisableAutoscaler disables the DNS cluster proportional autoscaler
+	DisableAutoscaler bool `json:"disableAutoscaler,true"`
 }
 
 // ExternalDNSConfig are options of the dns-controller
